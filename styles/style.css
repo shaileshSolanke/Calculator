@@ -1,0 +1,66 @@
+@font-face {
+  font-family: kodemono;
+  src: url("/fonts/KodeMono-Bold.woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #010101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculator-container {
+  background: #090909;
+  border-radius: 15px;
+  max-width: 500px;
+  overflow: hidden;
+}
+.output {
+  font-family: kodemono;
+  width: 100%;
+  padding: 25px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background: #1b1b1b;
+  color: #c7c7c7;
+}
+.key-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+.input-key {
+  font-family: kodemono;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: #171717;
+  border: none;
+  color: #c7c7c7;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  &:active {
+    background: #373737;
+    font-size: 2rem;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+.input-key:last-child {
+  background: #ababab;
+  color: #040404;
+  &:active {
+    background: #c0c0c0;
+  }
+}
+.input-key:first-child {
+  color: #cc3b38;
+}
