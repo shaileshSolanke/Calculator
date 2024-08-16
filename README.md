@@ -37,8 +37,8 @@ simple-calculator/
 ├── styles/
 │   └── style.css
 │
-├── index.html
-└── README.md
+├── README.md
+└── index.html
 
 
 
